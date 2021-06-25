@@ -14,7 +14,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 
 // Подключаем модули gulp-sass и gulp-less
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('dart-sass'));
 const less = require('gulp-less');
 
 // Подключаем Autoprefixer
