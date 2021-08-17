@@ -65,7 +65,7 @@ async function images() {
 		"app/images/dest/", // Выгружаем оптимизированные изображения в папку назначения
 		{ compress_force: false, statistic: true, autoupdate: true }, false, // Настраиваем основные параметры
 		{ jpg: { engine: "mozjpeg", command: ["-quality", "75"] } }, // Сжимаем и оптимизируем изображеня
-		{ png: { engine: "pngquant", command: ["--quality=75", "-o"] } },
+		{ png: { engine: "pngquant", command: ["--quality=75-100", "-o"] } },
 		{ svg: { engine: "svgo", command: "--multipass" } },
 		{ gif: { engine: "gifsicle", command: ["--colors", "64", "--use-col=web"] } },
 		function (err, completed) { // Обновляем страницу по завершению
