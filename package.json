@@ -12,20 +12,17 @@
     "browser-sync": "^2.27.7",
     "compress-images": "^2.0.4",
     "del": "^6.0.0",
-    "gifsicle": "^6.1.0",
+    "gifsicle": "^5.3.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-less": "^5.0.0",
     "gulp-newer": "^1.4.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.0",
-    "pngquant-bin": "^6.0.0"
-  },
-  "dependencies": {
-    "D": "^1.0.0",
-    "sass": "^1.45.1"
+    "pngquant-bin": "^6.0.0",
+    "sass": "^1.49.7"
   }
 }
