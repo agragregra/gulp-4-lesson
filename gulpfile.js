@@ -26,8 +26,8 @@ const cleancss = require('gulp-clean-css');
 // Подключаем compress-images для работы с изображениями
 const imagecomp = require('compress-images');
 
-// Подключаем модуль del
-const del = require('del');
+// Подключаем модуль gulp-clean (вместо del)
+const clean = require('gulp-clean');
 
 // Определяем логику работы Browsersync
 function browsersync() {
@@ -77,7 +77,7 @@ async function images() {
 }
 
 function cleanimg() {
-	return del('app/images/dest/**/*', { force: true }) // Удаляем всё содержимое папки "app/images/dest/"
+	return src('app/images/dest/', {allowEmpty: true}).pipe(clean()) // Удаляем всё содержимое папки "app/images/dest/"
 }
 
 function buildcopy() {
@@ -91,7 +91,7 @@ function buildcopy() {
 }
  
 function cleandist() {
-	return del('dist/**/*', { force: true }) // Удаляем всё содержимое папки "dist/"
+	return src('dist', {allowEmpty: true}).pipe(clean()) // Удаляем всё содержимое папки "dist/"
 }
 
 function startwatch() {
