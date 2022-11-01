@@ -21,8 +21,8 @@
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.1",
     "pngquant-bin": "^6.0.0",
-    "sass": "^1.54.0"
+    "sass": "^1.55.0"
   }
 }
