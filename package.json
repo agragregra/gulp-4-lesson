@@ -23,6 +23,6 @@
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.4",
     "pngquant-bin": "^6.0.0",
-    "sass": "^1.62.0"
+    "sass": "^1.62.1"
   }
 }
