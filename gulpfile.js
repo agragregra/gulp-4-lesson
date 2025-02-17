@@ -1,5 +1,5 @@
 // Определяем переменную "preprocessor"
-let preprocessor = 'sass'; 
+let preprocessor = 'sass';
 
 // Определяем константы Gulp
 const { src, dest, parallel, series, watch } = require('gulp');
